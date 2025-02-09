@@ -170,9 +170,29 @@ section {
     transition: background-color 0.3s;
 }
 .social-icons {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1b9bff;
+}
+
+@media (max-width: 600px) {
+  .social-icons {
+    flex-direction: column;
+  }
+
+  .social-icons a {
+    margin: 10px 0;
+  }
+}
+
